@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar {
+    justify-content: space-between;
+    height: 10vh;
+}
+#navbar > div:first-child > div:first-child {
+      width:24px;
+      height: 24px ;
+}
+.flex-container{
+    display: flex;
+}
+#navbar > div:first-child > div:nth-child(2) > img{
+    width : 129px ;
+    height: 56px;
+}
+#navbar > div:first-child {
+    align-items: center;
+}
+
+#searchBox input {
+    width: 512px;
+    height: 26px;
+    outline: none;
+    border: none;
+}
+#search-container{
+     gap:15px;
+     align-items: center;
+}
+#searchBox > div:nth-child(2) {
+    width: 50px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #searchBox > div:nth-child(2) {
+     padding:10px 24px ;
+} */
+#searchBox > div:nth-child(2) svg{
+    width: 24px;
+    height: 24px;
+}
+#mic-container > svg{
+    width: 24px;
+    height: 24px;
+}
+
+#mic-container{
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#searchBox {
+    border: 1px solid blue;
+    align-items: center;
+    border-radius: 30px;
+    padding: 6px 0px 6px 16px;
+    height: 32px;
+}
+
+#navbar-right-part svg {
+    width: 24px;
+    height: 24px;
+}
+
+#navbar-right-part div {
+    display: flex;
+    align-items: center;
+}
+
+#navbar-right-part {
+    gap : 16px;
+    align-items: center;
+}
+#navbar-right-part img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#sidebar-and-main-container{
+    /* background-color: yellow; */
+    height: 90vh;
+}
+#sidebar-and-main-container > section:first-child{
+    /* background-color: red; */
+    height: 90vh;
+    width: 20vw;
+    border-right:2px solid grey;
+    overflow-y: scroll;
+}
+#sidebar-and-main-container > section:nth-child(2){
+    /* background-color: pink; */
+    height: 90vh;
+    width: 80vw;
+    overflow-y: scroll;
+}
+.youtube-video-card{
+      position: relative;
+}
+
+#youtube-video-card-description-container > div:nth-child(2) > svg{
+     width: 24px;
+     height: 24px;
+}
+
+#youtube-video-card-description-container > div:first-child > div:first-child > img {
+    width: 24px ;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#youtube-video-card-description-container{
+     justify-content: space-between;
+}
+
+#youtube-video-card-description-container > div:first-child{
+  gap: 10px;
+}
+
+#youtube-videos-container{
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px;
+}
+.youtube-video-card > video{
+   width: 300px;
+   height: 200px;
+}
+
+.youtube-video-card > img{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+ }
+  /* .youtube-video-card > img:hover{
+      display: none;
+  } */
+
+  .sidebar-link-box{
+      gap : 20px
+  }
+
+  .sidebar-link-box > div:first-child > svg {
+      width: 24px;
+      height: 24px;
+  }
+
+  .sidebar-link-box {
+      padding: 10px;
+  }
+
+  .sidebar-link-box:hover {
+      background-color: grey;
+  }
+
+  /* Mobile device */
+  /* screen is a media type and others are print ,screen etc */
+  /* min width and max width are media features . there are some more media features as well orientation , heigth , width , min-heigth , min-width */
+  @media screen and (min-width:320px) and (max-width:480px) and (orientation : landscape){
+      body{
+        /* background-color: red; */
+       }
+  }
+  /* Ipad and tablets device */
+  @media screen and (min-width:481px) and (max-width:768px){
+      body{
+        /* background-color: blue; */
+       }
+  }
+  /* Desktop and large screen */
+  @media screen and (min-width:1025px) and (max-width:1200px){
+      body{
+        /* background-color: yellow; */
+       }
+  }
+  /* extra large screen */
+  @media screen and (min-width:1021px){
+      body{
+        /* background-color: pink; */
+       }
+  }
+  /* print media */
+  @media print {
+    body{
+      /* background-color: red; */
+    }
+    #sidebar-and-main-container > section:first-child{
+      display: none;
+    }
+  }
